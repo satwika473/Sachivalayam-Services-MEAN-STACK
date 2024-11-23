@@ -1,0 +1,106 @@
+/* Existing profile-container styling */
+.profile-container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 120px auto 60px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Existing h1 styling */
+  h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4CAF50; /* Green line for profits section */
+    padding-bottom: 10px;
+  }
+  
+  /* Existing p styling */
+  p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Existing h2 styling */
+  h2 {
+    font-size: 22px;
+    color: #4CAF50; /* Green color for profits section */
+    margin-bottom: 15px;
+  }
+  
+  /* Styling for Profits Table */
+  .profits-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .profits-table, .profits-table th, .profits-table td {
+    border: 1px solid #ddd;
+  }
+  
+  .profits-table th, .profits-table td {
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .profits-table th {
+    background-color: #4CAF50; /* Green header */
+    color: white;
+    font-size: 16px;
+  }
+  
+  .profits-table td {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .profits-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .profits-table tbody tr:hover {
+    background-color: #e8f5e9; /* Light green hover */
+  }
+  
+  /* Styling for Losses Table */
+  .losses-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .losses-table, .losses-table th, .losses-table td {
+    border: 1px solid #ddd;
+  }
+  
+  .losses-table th, .losses-table td {
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .losses-table th {
+    background-color: #f44336; /* Red header */
+    color: white;
+    font-size: 16px;
+  }
+  
+  .losses-table td {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .losses-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .losses-table tbody tr:hover {
+    background-color: #ffebee; /* Light red hover */
+  }
+  

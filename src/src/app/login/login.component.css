@@ -1,0 +1,92 @@
+/* login.component.css */
+
+/* Ensure the login page container covers the entire viewport */
+:host {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 91.5vh;
+    width: 100%;
+    background-image: url('https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden; /* Prevent scrolling */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+  }
+  
+  .login-container {
+    max-width: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(10, 10, 10); /* Ensure container background is white */
+    margin-right: 50px; /* Move container to the right side */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 90%;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-style: none;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  a {
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  /* Ensure the navbar is included in the full height */
+  html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: none; /* Ensure navbar background is transparent */
+  }
+  

@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<nav class="navbar">
+  <div class="menu-icon" (click)="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+  <!-- <a routerLink="/" class="logo">
+    <img src="https://cdn.pixabay.com/photo/2023/05/13/13/45/increase-arrow-7990565_1280.png" alt="Logo" class="logo-image">
+  </a> -->
+  <div class="nav-links">
+    <ul class="nav-links">
+      <li><a routerLink="/">HOME</a></li>
+      <li><a routerLink="/businesses">Welcome</a></li>
+      <li><a routerLink="/contact">CONTACT US</a></li>
+      <li><a routerLink="/about">ABOUT US</a></li>
+      <li><a routerLink="/register">REGISTER</a></li> <!-- Added Register link -->
+    </ul>
+  </div>
+
+  <div class="profile-container" (click)="toggleProfileMenu()">
+    <div class="profile-icon">
+      <i class="fas fa-user"></i>
+    </div>
+    <div class="profile-menu" *ngIf="isProfileMenuOpen">
+      <ul>
+        <li><a routerLink="/profile">Profile</a></li>
+        <li><a routerLink="/login">Login</a></li>
+        <li><a routerLink="/dashboard">Dashboard</a></li>
+        <li><a routerLink="/settings">Settings</a></li>
+        <li><a routerLink="/logout">Sign Out</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- <div class="side-menu">
+  <div class="side-menu-content">
+    <div class="side-menu-items">
+      <ul>
+        <li>
+          <a routerLink="/">
+            <span class="menu-text">Home</span>
+            <i class="fas fa-home"></i>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/businesses">
+            <span class="menu-text">Businesses</span>
+            <i class="fas fa-briefcase"></i>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/contact">
+            <span class="menu-text">Contact</span>
+            <i class="fas fa-envelope"></i>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/about">
+            <span class="menu-text">About</span>
+            <i class="fas fa-info-circle"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div> -->
+
+<div class="backdrop" *ngIf="isMenuOpen" (click)="toggleMenu()"></div>

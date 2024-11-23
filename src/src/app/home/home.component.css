@@ -1,0 +1,182 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Adding a clean font */
+    /* background-image: url('https://cdn.pixabay.com/photo/2023/08/23/06/29/forex-8207730_1280.jpg'); /* Background image for the entire page */
+    background-size: cover;
+    background-position: center; 
+    filter: brightness(0.7); /* Adding a slight darkening filter for better text contrast */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2; /* Ensure content is above background image */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 40px; /* Increasing padding */
+    background-color: rgba(255, 255, 255, 0.8); /* More transparent background */
+    margin-top: 80px;
+    max-width: 800px; /* Limit content width */
+    border-radius: 10px; /* Rounded corners for content */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Shadow for content */
+}
+
+h1 {
+    font-size: 3rem; /* Example: Adjust font size as needed */
+    margin-bottom: 1rem; /* Example: Adjust spacing as needed */
+}
+
+p {
+    font-size: 1.5rem; /* Example: Adjust font size as needed */
+    margin-bottom: 1.5rem; /* Example: Adjust spacing as needed */
+}
+
+.cta-button {
+    padding: 1rem 2rem; /* Example: Adjust button size as needed */
+    font-size: 1.2rem; /* Example: Adjust font size as needed */
+    background-color: rgb(39, 124, 181); /* Semi-transparent background color */
+    color: white; /* Example: Adjust button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button li{
+    list-style: none;
+    
+}
+
+.cta-button li a {
+    color: white;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: rgb(12, 92, 145); /* Semi-transparent background color on hover */
+}
+
+.search-section {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 1rem;
+    width: 50%;
+    border-radius: 10px; /* Rounded corners for section */
+}
+
+.search-bar {
+    width: 100%; /* Example: Adjust width as needed */
+    max-width: 400px; /* Example: Adjust max-width as needed */
+    padding: 1rem; /* Example: Adjust padding as needed */
+    font-size: 1rem; /* Example: Adjust font size as needed */
+    border: none;
+    border-radius: 15px; /* Rounded corners for input */
+    margin-top: 1rem; /* Example: Adjust margin as needed */
+}
+
+.featured-stocks, .latest-news, .testimonials, .additional-links {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 10px; /* Rounded corners for section */
+}
+
+.featured-stocks .stock-item, .latest-news .news-item, .testimonials .testimonial-item {
+    margin: 10px;
+    padding: 1rem; /* Example: Adjust padding as needed */
+    margin-bottom: 1rem; /* Example: Adjust margin as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* More transparent semi-transparent background */
+    border-radius: 50px; /* Rounded corners for items */
+    color: white; /* Example: Adjust text color */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.additional-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.2); /* More transparent white background */
+    backdrop-filter: blur(5px); /* Adding a blur effect to the background */
+    margin: 2rem;
+    border-radius: 10px; /* Rounded corners for section */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Shadow for section */
+}
+
+.additional-links a {
+    margin: 0.5rem; /* Example: Adjust margin as needed */
+    font-size: 1rem; /* Example: Adjust font size as needed */
+    text-decoration: none;
+    color: rgb(255, 255, 255); /* Semi-transparent link color */
+    transition: color 0.3s ease;
+}
+
+.additional-links a:hover {
+    color: rgba(41, 128, 185, 0.7); /* Semi-transparent link color on hover */
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 96.85%;
+    background-color: rgba(0, 0, 0, 0.5); /* More transparent background for footer */
+    color: white; /* Example: Adjust text color */
+    font-size: 0.8rem; /* Example: Adjust font size as needed */
+    margin-top: auto; /* Footer sticks to the bottom */
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer p a {
+    color: rgba(52, 152, 219, 0.7); /* Semi-transparent link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 0 0.5rem; /* Example: Adjust margin as needed */
+}
+
+.footer p a:hover {
+    color: rgba(41, 128, 185, 0.7); /* Semi-transparent link color on hover */
+}
+
+.stock-item img{
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.stock-item{
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    flex-direction: row;
+}
+
+.stock-item p{
+    padding: 0;
+    margin: 0;
+}
